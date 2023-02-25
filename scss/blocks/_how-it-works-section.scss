@@ -1,96 +1,84 @@
 .how-it-works-section {
-    &-container {
-        &-block {
-            position: relative;
+    margin-top: 350px;
 
-            &__title {
-                font-family: 'Fraunces';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 24px;
-                line-height: 32px;
-                color: #83888F;
-                margin-top: 400px;
-                margin-left: 165px;
+    .how-it-works-section-container-block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 178px 0;
+
+        &__title {
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #83888F;
+        }
+
+        &-imgbox {
+            position: absolute;
+            top: 120px;
+            display: flex;
+            align-items: center;
+
+            &__circleImg {
+                position: absolute;
             }
 
-            &-imgbox {
-
-                &__lineImg {
-                    left: 180px;
-                    z-index: -1;
-                    position: absolute;
-                    top: 110px;
-                }
-
-                &__circleImg {
-                    z-index: 1;
-                    margin-left: 349px;
-                }
+            &__circleImg:nth-child(2) {
+                left: 349px;
+                right: auto;
             }
 
-            &-imgbox:nth-child(2) {
-                margin-top: 65px;
-                margin-left: -185px;
+            &__circleImg:nth-child(3) {
+                left: 729px;
             }
+            
+        }
 
-            &-flexbox {
+        &-flexbox {
+            display: flex;
+            gap: 0 75px;
+
+            &-innerBox {
+                max-width: 285px;
                 display: flex;
+                flex-direction: column;
+                gap: 35px 0;
 
-                &-firstbox {
-                    width: 285px;
-                    margin-left: 165px;
-
-                    &__title {
-                        font-family: 'Fraunces';
-                        font-style: normal;
-                        font-weight: 900;
-                        font-size: 72px;
-                        line-height: 72px;
-                        color: #FDD6BA;
-                    }
-
-                    &__secondTitle {
-                        font-family: 'Fraunces';
-                        font-style: normal;
-                        font-weight: 900;
-                        font-size: 32px;
-                        line-height: 36px;
-                        color: #333D4B;     
-                        width: 205px;
-                    }
-
-                    &__text {
-                        font-family: 'Barlow';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: #333D4B;
-                        padding-right: 17px;
-                        margin-bottom: 64px;
-                    }
+                &__title {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 72px;
+                    line-height: 72px;
+                    color: #FDD6BA;
                 }
 
-                &-secondbox {
-                    width: 285px;
-                    margin-left: 95px; 
+                &__secondTitle {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #333D4B;
+                    max-width: 255px;
                 }
-            }
 
-            &-btn {
-                padding: 15px 45px;
-                background: #0E8784;
-                border-radius: 6px;
-                margin-left: 165px;
-                font-family: 'Fraunces';
-                font-style: normal;
-                font-weight: 900;
-                font-size: 18px;
-                line-height: 25px;
-                text-align: center;
-                color: #FEFCF7;
+                &__text {
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333D4B;
+                }
             }
         }
+    }
+
+    @media (max-width: 768px) {
+        
     }
 }
