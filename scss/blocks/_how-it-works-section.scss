@@ -1,0 +1,96 @@
+.how-it-works-section {
+    &-container {
+        &-block {
+            position: relative;
+
+            &__title {
+                font-family: 'Fraunces';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: #83888F;
+                margin-top: 400px;
+                margin-left: 165px;
+            }
+
+            &-imgbox {
+
+                &__lineImg {
+                    left: 180px;
+                    z-index: -1;
+                    position: absolute;
+                    top: 110px;
+                }
+
+                &__circleImg {
+                    z-index: 1;
+                    margin-left: 349px;
+                }
+            }
+
+            &-imgbox:nth-child(2) {
+                margin-top: 65px;
+                margin-left: -185px;
+            }
+
+            &-flexbox {
+                display: flex;
+
+                &-firstbox {
+                    width: 285px;
+                    margin-left: 165px;
+
+                    &__title {
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 72px;
+                        line-height: 72px;
+                        color: #FDD6BA;
+                    }
+
+                    &__secondTitle {
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 32px;
+                        line-height: 36px;
+                        color: #333D4B;     
+                        width: 205px;
+                    }
+
+                    &__text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                        padding-right: 17px;
+                        margin-bottom: 64px;
+                    }
+                }
+
+                &-secondbox {
+                    width: 285px;
+                    margin-left: 95px; 
+                }
+            }
+
+            &-btn {
+                padding: 15px 45px;
+                background: #0E8784;
+                border-radius: 6px;
+                margin-left: 165px;
+                font-family: 'Fraunces';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                color: #FEFCF7;
+            }
+        }
+    }
+}

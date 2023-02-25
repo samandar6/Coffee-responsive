@@ -1,0 +1,132 @@
+.why-us-section {
+    margin-top: 200px;
+
+    .why-us-section-container-block {
+        height: 577px;
+        background-color: #2C343E;
+        border-radius: 15px;
+
+        &__title {
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #FEFCF7;
+            padding-top: 100px;
+        }
+
+        &__text {
+            padding-top: 32px;
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        &-flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 30px;
+            padding-top: 86px;
+
+            &-innerBox {
+                min-width: 350px;
+                height: 382px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 56px 0;
+                background: #0E8784;
+                border-radius: 8px;
+
+                &-textbox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 24px 0;
+
+                    &__title {
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #FEFCF7;
+                    }
+
+                    &__text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FEFCF7;
+                        max-width: 255px;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+        } 
+    }
+
+    @media (max-width: 768px) {
+        .why-us-section-container-block {
+            min-height: 597px;
+
+            &-flexbox {
+                padding-top: 70px;
+                flex-direction: column;
+                gap: 24px 0;
+    
+                &-innerBox {
+                    max-width: 573px;
+                    height: 180px;
+                    flex-direction: row;
+                    gap: 0 55px;
+                    padding-left: 70px;
+                    padding-right: 48px;
+
+                    &-textbox {
+                        &__text {
+                            max-width: 344px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .why-us-section-container-block {
+            height: 902px;
+
+            &-flexbox {
+                &-innerBox {
+                    max-width: 279px;
+                    min-height: 382px;
+                    flex-direction: column;
+                    gap: 56px 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 373px) {
+        .why-us-section-container-block-flexbox-innerBox {
+            width: 85vw;
+        }
+    }
+}

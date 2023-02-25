@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px) {
+    .how-it-works-section {
+        &-container {
+            &-block {
+                &__title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-left: 39px;
+                }
+
+                &-imgbox {
+                    &__lineImg {
+                        width: 467px;
+                        left: 53.5px;
+                    }
+
+                    &__circleImg {
+                        width: 31px;
+                        height: 31px;
+                        margin-left: 202px;
+                    }
+                }
+
+                &-imgbox:nth-child(2) {
+                    margin-left: -158px;
+                }
+
+                &-flexbox {
+                    &-firstbox {
+                        width: 233px;
+                        margin-left: 39px;
+
+                        &__title {
+                            font-size: 72px;
+                            line-height: 72px;
+                        }
+
+                        &-secondTitle {
+                            font-size: 28px;
+                            line-height: 32px;
+                            width: 223px;
+                            height: 65px;
+                            margin-right: 0;
+                        }
+
+                        &__text {
+                            font-size: 15px;
+                            line-height: 25px;
+                            padding-right: 10px;
+                        }
+                    }
+
+                    &-secondbox {
+                        width: 223px;
+                        margin-left: 10px;
+                    }
+
+
+                }
+
+                &-btn {
+                    margin-left: 39px;
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
+}

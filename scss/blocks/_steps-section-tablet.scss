@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .steps-section {
+        &-container {
+            &-block {
+                width: 768px;
+                height: 640px;
+                margin-left: 0;
+
+                &-imgbox {
+                    &__lineImg {
+                        left: 54px;
+                        top: 112px;
+                        width: 467px;
+                    }
+
+                    &__circleImg1 {
+                        margin-left: 40px;
+                        margin-top: 95px;
+                    }
+
+                    &__circleImg {
+                        margin-left: 200px;
+                    }
+                }
+
+                &-flexbox {
+                    gap: 0 10px;
+
+                    &-firstbox {
+                        margin-top: 176px;
+                        margin-left: 20px;
+
+                        &__secondTitle {
+                            font-size: 28px;
+                            line-height: 32px;
+                            width: 183px;
+                        }
+
+                        &__text {
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
+                    }
+
+                    &-secondbox {
+                        margin-top: 176px;
+                    }
+                }
+            }
+        }
+    }
+}

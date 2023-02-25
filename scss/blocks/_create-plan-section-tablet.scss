@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+    .create-plan-section {
+        &-container {
+            &-block {
+                width: 689px;
+                margin-left: 39px;
+                background-position: center;
+                border-radius: 10px;
+
+                &__title {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 48px;
+                    color: #FEFCF7;
+                    padding-right: 200px;
+                }
+
+                &__text {
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #FEFCF7;
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                    padding-right: 220px;
+                }
+            }
+        }
+    }
+}

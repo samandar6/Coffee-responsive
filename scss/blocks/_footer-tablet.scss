@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+    .footer {
+        &-section {
+            &-container {
+                &-block {
+                    width: 688px;
+                    height: 270px;
+                    margin-left: 39px;
+                    margin-top: 144px;
+                    
+                    &-flexbox {
+                        flex-direction: column;
+
+                        &__img {
+                            margin-left: -35px;
+                        }
+
+                        nav {
+                          ul {
+                            margin-left: -50px;
+                          }
+                        }
+
+                        &-spanbox {
+                            margin-left: -60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

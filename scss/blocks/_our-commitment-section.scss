@@ -1,0 +1,41 @@
+.our-commitment-section {
+    &-container {
+        &-block {
+            &-flexbox {
+                display: flex;
+                gap: 168px 125px;
+                align-items: center;
+
+                &__img {
+                    border-radius: 8px;
+                    margin-top: 168px;
+                    margin-left: 165px;
+                }
+
+                &-textbox {
+                    &__title {
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 40px;
+                        line-height: 48px;
+                        color: #333D4B;
+                        padding-top: 100px;
+                    }
+
+                    &__text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                        mix-blend-mode: normal;
+                        opacity: 0.8;
+                        width: 540px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+    .why-us-section {
+        &-container {
+            &-block {
+                width: 688px;
+                margin-left: 40px;
+                margin-top: 144px;
+
+                &__title {
+                    font-size: 32px;
+                    line-height: 48px;
+                    padding-top: 71px;
+                }
+
+                &__text {
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-left: 74px;
+                    padding-right: 37px;
+                }
+
+                &-flexbox {
+                    flex-direction: column;
+
+                    &-firstbox {
+                        width: 573px;
+                        margin-left: 57px;
+                        display: flex;
+                        height: 180px;
+                        margin-top: 70px;
+
+                        &__img {
+                            width: 55px;
+                            height: 56px;
+                            margin-left: 70px;
+                            margin-top: 50px;
+                        }
+
+                        &-textbox {
+                            &__title {
+                                font-size: 24px;
+                                line-height: 32px;
+                                width: 255px;
+                                text-align: left;
+                                margin-left: 55px;
+                            }
+
+                            &__text {
+                                font-size: 15px;
+                                line-height: 25px;
+                                width: 364px;
+                                text-align: left;
+                                padding-top: -40px;
+                                margin-left: 55px;
+                            }
+                        } 
+                    }
+
+                    &-secondbox {
+                        width: 573px;
+                        height: 180px;
+                        margin-top: 24px;
+                        margin-left: 57px;
+                        display: flex;
+
+                        .why-us-section-container-block-flexbox-firstbox__title1 {
+                            font-size: 24px;
+                            line-height: 32px;
+                            font-family: 'Fraunces';
+                            font-style: normal;
+                            font-weight: 900;
+                            color: #FEFCF7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

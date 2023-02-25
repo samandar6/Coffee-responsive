@@ -1,0 +1,89 @@
+.our-collection-section {
+    margin-top: 136px;
+
+    .our-collection-section-container-block {
+        position: relative;
+
+        &__img {
+            position: absolute;
+            z-index: -1;
+            top: -30px;
+            width: 100%;
+        }
+
+        &-flexbox {
+            display: flex;
+            padding-top: 130px;
+            justify-content: space-between;
+
+            &-innerBox {
+                max-width: 255px;
+                text-align: center;
+
+                &-textbox {
+                    &__title {
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #333D4B;
+                        padding-top: 70px;  
+                        padding-bottom: 24px;
+                    }
+
+                    &__text {
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #333D4B;
+                    }
+                }
+            }
+
+            &-innerBox:nth-child(4) {
+                padding-top: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 1015px) {
+        .our-collection-section-container-block-flexbox {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+
+            &-innerBox {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                max-width: 573px;
+                justify-content: space-between;
+
+                &-textbox {
+                    text-align: left;
+                    &__title {
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .our-collection-section-container-block-flexbox {
+            gap: 40px 0;
+        }
+
+        .our-collection-section-container-block-flexbox-innerBox {
+            flex-direction: column;
+            
+            &-textbox {
+                text-align: center;
+                max-width: 282px;
+            }
+        }
+    }
+}

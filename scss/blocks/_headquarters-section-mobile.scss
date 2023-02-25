@@ -1,0 +1,47 @@
+@media (max-width: 375px) {
+    .headquarters-section {
+        &-container {
+            &-block {
+                position: relative;
+
+                &__title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-left: 0;
+                    text-align: center;
+                    width: 327px;
+                    margin-left: 24px;
+                    padding-top: 120px;
+                }
+
+                &-flexbox {
+                    flex-direction: column;
+                    gap: 0;
+                    align-items: flex-start;
+
+                    &-box {
+                        width: 287px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        &__title {
+                            text-align: center;
+                        }
+
+                        nav {
+                            ul {
+                                li {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

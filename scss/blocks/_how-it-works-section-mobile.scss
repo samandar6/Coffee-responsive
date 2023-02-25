@@ -1,0 +1,57 @@
+@media (max-width: 375px) {
+    .how-it-works-section {
+        &-container {
+            &-block {
+                &__title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-top: 800px;
+                    margin-left: 110px;
+                }
+
+                &-imgbox {
+                    display: none;
+                }
+
+                &-flexbox {
+                    flex-direction: column;
+
+                    &-firstbox {
+                        width: 327px;
+                        margin-left: 24px;
+
+                        &__title {
+                            font-size: 72px;
+                            line-height: 72px;
+                            text-align: center;
+                        }
+
+                        &__secondTitle {
+                            font-size: 28px;
+                            line-height: 32px;
+                            text-align: center;
+                            width: 337px;
+                        }
+
+                        &__text {
+                            font-size: 15px;
+                            line-height: 25px;
+                            text-align: center;
+                            padding-right: 0;
+                        }
+                    }
+
+                    &-secondbox {
+                        width: 327px;
+                        margin-left: 24px;
+                    }
+                }
+
+                &-btn {
+                    margin-top: 109px;
+                    margin-left: 79px;
+                }
+            }
+        }
+    }
+}
