@@ -1,30 +1,30 @@
 .footer-section {
-    &-container {
-        &-block {
-            width: 1280px;
-            height: 120px;
-            background: #2C343E;
-            margin-top: 200px;
-            margin-left: 80px;
+    margin-top: 200px;
 
-            &-flexbox {
-                display: flex;
-                align-items: center;
+    .footer-section-container-block {
+        max-width: 1280px;
+        min-height: 120px;
+        background: #2C343E;
+         
+        &-flexbox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 47px 85px;
+            flex-wrap: wrap;
+            gap: 20px 0;
 
-                &__img {
-                    width: 236px;
-                    height: 26px;
-                    margin-top: 47px;
-                    margin-left: 85px;
-                }
+            &__img {
+                width: 236px;
+                height: 26px;
+            }
 
-                nav {
-                    ul {
-                        display: flex;
-                        gap: 153px 33px;
-                        margin-left: 103px;
-                        padding-top: 35px;
+            nav {
+                ul {
+                    display: flex;
+                    gap: 0 33px;
 
+                    li {
                         a {
                             font-family: 'Barlow';
                             font-style: normal;
@@ -34,35 +34,48 @@
                             letter-spacing: 0.923077px;
                             text-transform: uppercase;
                             color: #83888F;
-                            transition: 0.5s ease;
-                        }
-
-                        a:hover {
-                            color: #fff;
-                            cursor: pointer;
                         }
                     }
-                }
 
-                &-spanbox {
-                    margin-left: 259px;
-                    padding-top: 45px;
-
-                    &-span {
-                        &-link {
-                            color: white;
-                            margin-left: 24px;
-                            transition: 0.5s ease;
-                        }
-
-                        &-link:hover {
-                            color: #FDD6BA;
-                        }
+                    li:nth-child(1) {
+                        margin-left: auto;
                     }
                 }
-
-
             }
+
+            &-spanbox {
+                display: flex;
+                gap: 0 24px;
+            }
+
+            
+        }
+    }
+
+    @media (max-width: 850px) {
+        .footer-section-container-block-flexbox {
+            &-spanbox {
+                margin: 0 auto;
+            } 
+        }
+    }
+
+    @media (max-width: 705px) {
+        .footer-section-container-block-flexbox {
+            justify-content: center;
+            padding: 20px 0;
+
+            nav {
+                ul {
+                    flex-wrap: wrap;
+                    margin: 0 auto;    
+                    
+                }
+            }
+
+            &-spanbox {
+                margin: 0 auto;
+            } 
         }
     }
 }
