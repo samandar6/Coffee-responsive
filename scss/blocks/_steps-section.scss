@@ -1,3 +1,76 @@
 .steps-section {
-    
+    margin-top: 170px;
+
+    .steps-section-container-block {
+        min-height: 653px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        background: #2C343E;
+        border-radius: 10px;
+        padding-left: 85px;
+
+        &-imgbox {
+            position: absolute;
+            top: 104px;
+            display: flex;
+            align-items: center;
+            
+
+            &__circleImg {
+                position: absolute;
+            }
+
+            &__circleImg:nth-child(2) {
+                left: 399px;
+            }
+
+            &__circleImg:nth-child(3) {
+                left: 739px;
+            }
+        }
+
+        &-flexbox {
+            display: flex;
+            margin: auto 0;
+            max-width: 1045px;
+            justify-content: space-between;
+
+            &-innerBox {
+                max-width: 285px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px 0;
+
+                &__title {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 72px;
+                    line-height: 72px;
+                    color: #FDD6BA;
+                }
+
+                &__secondTitle {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #FEFCF7;
+                    max-width: 245px;
+                }
+
+                &__text {
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #FEFCF7;
+                }
+            }
+        }
+    }
 }

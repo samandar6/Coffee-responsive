@@ -983,4 +983,97 @@ body a {
     text-align: center;
   }
 }
+
+.steps-section {
+  margin-top: 170px;
+}
+
+.steps-section .steps-section-container-block {
+  min-height: 653px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #2C343E;
+  border-radius: 10px;
+  padding-left: 85px;
+}
+
+.steps-section .steps-section-container-block-imgbox {
+  position: absolute;
+  top: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps-section .steps-section-container-block-imgbox__circleImg {
+  position: absolute;
+}
+
+.steps-section .steps-section-container-block-imgbox__circleImg:nth-child(2) {
+  left: 399px;
+}
+
+.steps-section .steps-section-container-block-imgbox__circleImg:nth-child(3) {
+  left: 739px;
+}
+
+.steps-section .steps-section-container-block-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+  max-width: 1045px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-section .steps-section-container-block-flexbox-innerBox {
+  max-width: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px 0;
+}
+
+.steps-section .steps-section-container-block-flexbox-innerBox__title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+}
+
+.steps-section .steps-section-container-block-flexbox-innerBox__secondTitle {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #FEFCF7;
+  max-width: 245px;
+}
+
+.steps-section .steps-section-container-block-flexbox-innerBox__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
 /*# sourceMappingURL=main.css.map */
