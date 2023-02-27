@@ -1,38 +1,73 @@
 .our-commitment-section {
-    &-container {
-        &-block {
-            &-flexbox {
-                display: flex;
-                gap: 168px 125px;
-                align-items: center;
+    margin-top: 170px;
 
+    .our-commitment-section-container-block {
+        &-flexbox {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &__img {
+                border-radius: 8px;
+            }
+
+            &-textbox {
+                display: flex;
+                flex-direction: column;
+                max-width: 540px;
+                gap: 32px 0 ;
+
+                &__title {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 48px;
+                    color: #333D4B;
+                }
+
+                &__text {
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333D4B;
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 850px) {
+        .our-commitment-section-container-block {
+            &-flexbox {
+                flex-direction: column;
+                gap: 50px 0;
+
+                &-textbox {
+                    align-items: center;
+
+                    &__text {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .our-commitment-section-container-block {
+            &-flexbox {
                 &__img {
-                    border-radius: 8px;
-                    margin-top: 168px;
-                    margin-left: 165px;
+                    width: 95%;
                 }
 
                 &-textbox {
                     &__title {
-                        font-family: 'Fraunces';
-                        font-style: normal;
-                        font-weight: 900;
-                        font-size: 40px;
-                        line-height: 48px;
-                        color: #333D4B;
-                        padding-top: 100px;
-                    }
-
-                    &__text {
-                        font-family: 'Barlow';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 26px;
-                        color: #333D4B;
-                        mix-blend-mode: normal;
-                        opacity: 0.8;
-                        width: 540px;
+                        text-align: center;
+                        font-size: 30px;
                     }
                 }
             }

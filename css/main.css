@@ -90,7 +90,7 @@ body a {
 
 .create-plan-section .create-plan-section-container-block {
   min-height: 600px;
-  background-image: url(/img/greatCoffee.png);
+  background-image: url(/Coffee-responsive-master/img/greatCoffee.png);
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,6 +708,135 @@ body a {
   }
   .footer-section .footer-section-container-block-flexbox-spanbox {
     margin: 0 auto;
+  }
+}
+
+.about-us-section .about-us-section-container-block {
+  min-height: 450px;
+  padding-left: 85px;
+  background-image: url(/img/about.png);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px 0;
+}
+
+.about-us-section .about-us-section-container-block__title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+
+.about-us-section .about-us-section-container-block__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  max-width: 445px;
+}
+
+@media (max-width: 500px) {
+  .about-us-section .about-us-section-container-block {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-us-section .about-us-section-container-block__text {
+    text-align: center;
+  }
+}
+
+.our-commitment-section {
+  margin-top: 170px;
+}
+
+.our-commitment-section .our-commitment-section-container-block-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-commitment-section .our-commitment-section-container-block-flexbox__img {
+  border-radius: 8px;
+}
+
+.our-commitment-section .our-commitment-section-container-block-flexbox-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 540px;
+  gap: 32px 0;
+}
+
+.our-commitment-section .our-commitment-section-container-block-flexbox-textbox__title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+}
+
+.our-commitment-section .our-commitment-section-container-block-flexbox-textbox__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media (max-width: 850px) {
+  .our-commitment-section .our-commitment-section-container-block-flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px 0;
+  }
+  .our-commitment-section .our-commitment-section-container-block-flexbox-textbox {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-commitment-section .our-commitment-section-container-block-flexbox-textbox__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-commitment-section .our-commitment-section-container-block-flexbox__img {
+    width: 95%;
+  }
+  .our-commitment-section .our-commitment-section-container-block-flexbox-textbox__title {
+    text-align: center;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
