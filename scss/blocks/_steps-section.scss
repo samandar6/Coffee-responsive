@@ -38,7 +38,7 @@
             justify-content: space-between;
 
             &-innerBox {
-                max-width: 285px;
+                width: 285px;
                 display: flex;
                 flex-direction: column;
                 gap: 40px 0;
@@ -73,4 +73,35 @@
             }
         }
     }
+
+    @media (max-width: 1060px) {
+        .steps-section-container-block {
+            &-imgbox {
+                display: none;
+            }
+        } 
+    } 
+
+    @media (max-width: 761px) {
+        .steps-section-container-block {
+            padding: 0;
+
+            &-flexbox {
+                padding-top: 40px;
+                padding-bottom: 40px;
+                margin: 0;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 40px 50px;
+                text-align: center;
+
+                &-innerBox {
+                    &__secondTitle {
+                        text-align: center;
+                    }
+                }
+            }
+        } 
+    } 
 }

@@ -1,3 +1,202 @@
 .perferences-section {
-    
+    margin-top: 160px;
+
+    .perferences-section-container-block {
+        &-flexbox {
+            display: flex;
+            justify-content: space-between;
+
+            &-selectBox {
+                ul {
+                    li {
+                        height: 80px;
+                        display: flex;
+                        align-items: center;
+                        border-top: 1px solid #83888F;
+                        width: 255px;
+                        gap: 0 29px;
+                        
+                        span {
+                            font-family: 'Fraunces';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: #83888F;
+                            opacity: 0.5;
+                        }
+
+                        .greenSpan {
+                            color: #0E8784;
+                        }
+
+                        a {
+                            font-family: 'Fraunces';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: #333D4B;
+                            opacity: 0.5;
+                        }
+
+                        .graySpan {
+                            opacity: 0.8;
+                        }
+                    }
+
+                    li:first-child {
+                        border-top: none;
+                    }
+                }
+            }
+
+            &-secondFlexbox {
+                display: flex;
+                flex-direction: column;
+                gap: 88px 0;
+
+                .perferences-section-container-block-flexbox-inputBox{
+                    &-box {
+                        max-width: 730px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 56px 0;
+
+                        &-innerBox {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            &__title {
+                                font-family: 'Fraunces';
+                                font-style: normal;
+                                font-weight: 900;
+                                font-size: 40px;
+                                line-height: 48px;
+                                color: #83888F;
+                            }
+                            
+                        }
+                        &-flexbox {
+                            display: flex;
+                            gap: 0 23px;
+
+                            &-innerBox {
+                                width: 228px;
+                                height: 250px;
+                                background: #F4F1EB;
+                                border-radius: 8px;
+                                padding-top: 32px;
+                                padding-left: 28px;
+
+                                &__title {
+                                    font-family: 'Fraunces';
+                                    font-style: normal;
+                                    font-weight: 900;
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    color: #333D4B;
+                                    padding-bottom: 24px;
+                                }
+
+                                &__text {
+                                    font-family: 'Barlow';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 26px;
+                                    color: #333D4B;
+                                    max-width: 172px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-textbox {
+                max-width: 730px;
+                min-height: 208px;
+                background: #2C343E;
+                padding: 24px 64px;
+
+                &__title {
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                    padding-bottom: 8px;
+                }
+
+                &__text {
+                    font-family: 'Fraunces';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 40px;
+                    color: #FFFFFF;
+
+                    span {
+                        color: #0E8784;
+                    }
+                }
+            }
+
+            &__btn {
+                padding: 15px 35px; 
+                background: #0E8784;
+                border-radius: 6px;
+                margin-left: auto;
+                font-family: 'Fraunces';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FEFCF7;
+            }
+        }
+    } 
+
+    @media (max-width: 1000px) {
+        .perferences-section-container-block {
+            &-flexbox {
+                justify-content: center;
+
+                &-selectBox {
+                    display: none;
+                }
+
+                &-secondFlexbox {
+                    .perferences-section-container-block-flexbox-inputBox {
+                        &-box {
+                            &-flexbox {
+                                flex-direction: column;
+                                gap: 35px 0;
+                                align-items: center;
+
+                                &-innerBox {
+                                    width: 95%;
+                                    height: 160px;
+
+                                    &__title {
+                                        padding-bottom: 8px;
+                                    }
+
+                                    &__text {
+                                        max-width: 278px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

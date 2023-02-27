@@ -1038,7 +1038,7 @@ body a {
 }
 
 .steps-section .steps-section-container-block-flexbox-innerBox {
-  max-width: 285px;
+  width: 285px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,5 +1075,250 @@ body a {
   font-size: 16px;
   line-height: 26px;
   color: #FEFCF7;
+}
+
+@media (max-width: 1060px) {
+  .steps-section .steps-section-container-block-imgbox {
+    display: none;
+  }
+}
+
+@media (max-width: 761px) {
+  .steps-section .steps-section-container-block {
+    padding: 0;
+  }
+  .steps-section .steps-section-container-block-flexbox {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px 50px;
+    text-align: center;
+  }
+  .steps-section .steps-section-container-block-flexbox-innerBox__secondTitle {
+    text-align: center;
+  }
+}
+
+.perferences-section {
+  margin-top: 160px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-selectBox ul li {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #83888F;
+  width: 255px;
+  gap: 0 29px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-selectBox ul li span {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  opacity: 0.5;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-selectBox ul li .greenSpan {
+  color: #0E8784;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-selectBox ul li a {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  opacity: 0.5;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-selectBox ul li .graySpan {
+  opacity: 0.8;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-selectBox ul li:first-child {
+  border-top: none;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 88px 0;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box {
+  max-width: 730px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 56px 0;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-innerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-innerBox__title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 23px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox-innerBox {
+  width: 228px;
+  height: 250px;
+  background: #F4F1EB;
+  border-radius: 8px;
+  padding-top: 32px;
+  padding-left: 28px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox-innerBox__title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  padding-bottom: 24px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox-innerBox__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  max-width: 172px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-textbox {
+  max-width: 730px;
+  min-height: 208px;
+  background: #2C343E;
+  padding: 24px 64px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-textbox__title {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-bottom: 8px;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-textbox__text {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.perferences-section .perferences-section-container-block-flexbox-textbox__text span {
+  color: #0E8784;
+}
+
+.perferences-section .perferences-section-container-block-flexbox__btn {
+  padding: 15px 35px;
+  background: #0E8784;
+  border-radius: 6px;
+  margin-left: auto;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FEFCF7;
+}
+
+@media (max-width: 1000px) {
+  .perferences-section .perferences-section-container-block-flexbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .perferences-section .perferences-section-container-block-flexbox-selectBox {
+    display: none;
+  }
+  .perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 35px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox-innerBox {
+    width: 95%;
+    height: 160px;
+  }
+  .perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox-innerBox__title {
+    padding-bottom: 8px;
+  }
+  .perferences-section .perferences-section-container-block-flexbox-secondFlexbox .perferences-section-container-block-flexbox-inputBox-box-flexbox-innerBox__text {
+    max-width: 278px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
